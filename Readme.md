@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Айрат](https://up.htmlacademy.ru/htmlcss/25/user/1059679).
-* Наставник: [Максим Клевцов] (https://up.htmlacademy.ru/htmlcss/25/user/191845).
+* Наставник: [Максим Клевцов](https://up.htmlacademy.ru/htmlcss/25/user/191845).
 
 ---
 

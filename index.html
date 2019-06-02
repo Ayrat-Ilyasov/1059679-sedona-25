@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+  
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo" href="index.html">
-				<img src="img/logo-sedona.svg"  alt="Возврат на главную">
+				<img src="img/logo-sedona.svg" width=140 height=71  alt="Возврат на главную">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="info.html">Информация</a></li>
@@ -18,9 +22,13 @@
 			</ul>
 		</nav>
 	</header>
+	
 	<main class="advantages">
-		<img src="img/welcome.svg" width=459 height=353>
-		<img src="img/background-photo.jpg">
+		<div>
+			<img src="img/welcome.svg" width=459 height=353>
+			<img src="img/background-photo.jpg">
+			<img src="img/polygon.svg">
+		</div>
 		<section class="Motivator">
 			<p class="Tagline">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
 			<p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
@@ -28,59 +36,70 @@
 		<ul class="list-of-benefits">
 			<li>
 				<img src="img/Hotel-with-flag.jpg"><br>
-				Настоящий городок <br>
-				— №1 —<br>
-				Седона не атракцион для туристов, там течёт своя жизнь!
-				<ul>
+				<div class="benefits-blue">
+					Настоящий городок <br>
+					<p class="reasons">— №1 —<br>
+					Седона не атракцион для туристов, там течёт своя жизнь!
+				</p>
+				</div>
+				<ul class="list-of-benefits">
 					<li>
 						<img src="img/icon-food.svg"><br>
 						Жильё <br>
-						Рекомендуем пожить в настоящем мотеле, все как в кино!
+						<p class="reasons">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</li>
 					<li>
 						<img src="img/icon-house.svg"><br>
 						Еда<br>
-						Всегда заказываете фирменный бургер, Вы не разочаруетесь!
+						<p class="reasons">Всегда заказываете фирменный бургер, Вы не разочаруетесь!</p>
 					</li>
 					<li>
 						<img src="img/icon-gift.svg"><br>
 						Сувениры<br>
-						Не только китайского, но и местного производства!
+						<p class="reasons">Не только китайского, но и местного производства!</p>
 					</li>
 				</ul>
 			</li>
 			<li>
 				<img src="img/photo-of-canyon.jpg"><br>
-				Там есть мост дьявола<br>
-				— №2 —<br>
-				Да, по нему можно пройти! если конечно вы осмелитесь.
+				<div class="benefits-blue">
+					Там есть мост дьявола<br>
+					<p class="reasons">— №2 —<br>
+					Да, по нему можно пройти! если конечно вы осмелитесь.
+					</p>
+				</div>
 			</li>
 			<li>
-				Небольшая площадь<br>
-				— №3 —<br>
-				Все достопримечательности находятся очень близко
+				<div class="benefits-gray">
+					Небольшая площадь<br>
+					<p class="reasons">— №3 —<br>
+					Все достопримечательности находятся очень близко
+					</p>
+				<div>
 			</li>
 			<li>
-				Красивая дорога<br>
-				— №4 —<br>
-				Ехать в Седону из Лас-Вегаса совсем не скучно!
+				<div class="benefits-gray">
+					Красивая дорога<br>
+					<p class="reasons">— №4 —<br>
+					Ехать в Седону из Лас-Вегаса совсем не скучно!
+					</p>
+				<div>
 			</li>
 			<li>
-				Мало туристов<br>
-				— №5 —<br>
-				Большинство едет в гранд каньон и толпится там
-			</li>
-			
-		</ul>
-		
-		
-		
-		
+				<div class="benefits-gray">
+					Мало туристов<br>
+					<p class="reasons">— №5 —<br>
+					Большинство едет в гранд каньон и толпится там
+					</p>
+				<div>
+			</li>			
+		</ul>		
 	</main>
+	
 	<footer class="main-footer">
 		<b class="footer-name">#visitSedona</b>
-		<div class="footer-social">
-			<ul>
+		<div>
+			<ul class="footer-social">
 				<li>
 					<a class="social-button" href="#">
 					<img src="img/t-icon.svg">

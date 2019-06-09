@@ -24,96 +24,100 @@
 	<main class="advantages">
 		<h1 class="visually-hidden">страница выбора жилья</h1>
 		<section class="filter">
-          <h2 class="visually-hidden">фильтры для выбора жилья</h2>
-          
-          <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-			<fieldset>
-				<legend>инфраструктура:</legend>
-					<ul class="filter-elements">
-						<li>
-							<input type="checkbox" name="swimmingpull">бассейн
-						</li>
-						<li>
-							<input type="checkbox" name="parking">парковка
-						</li>
-						<li>
-							<input type="checkbox" name="wifi">wifi
-						</li>
-					</ul>            
-			</fieldset>
-			<fieldset>
-				<legend>тип жилья:</legend>
-					<ul class="filter-elements">
-						<li>
-							<input type="checkbox" name="hotel">гостиница
-						</li>
-						<li>
-							<input type="checkbox" name="motel">мотель
-						</li>
-						<li>
-							<input type="checkbox" name="appartment">аппартаменты
-						</li>
-			</fieldset>
-			<p class="filter-item">
-              <label for="filter-name">стоимость в сутки(Р)</label>
-              <input id="filter-price-min" type="text" name="name" value="" placeholder="от 0">
-			  <input id="filter-price-max" type="text" name="name" value="" placeholder="до 3000">
-            </p>
-			<button type="submit" class="button filter-button-transparent">
-				показать
-			</button>
-			
-            
-		<p>
-			найдено:
-		</p>
-		<p>
-			сортировка 
-		</p>
-		<ul class="site-navigation">
-			<li><a>по цене</a></li>
-			<li><a>по типу</a></li>
-			<li><a>по рейтингу</a></li>
-		</ul>
-		<h2 class="visually-hidden">список доступного жилья</h2>
-		<ul>список гостиниц
-			<li>Amara Resort & Spa
-				<img src="img/amara-resort-&-spa.jpg">
-				<p>гостиница</p>
-				<p>от 4000р.</p>
-				<button type="submit" class="button filter-button-blue">
-					подробнее
+          	<h2 class="visually-hidden">фильтры для выбора жилья</h2>
+         	<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+				<fieldset>
+					<legend>инфраструктура:</legend>
+						<ul class="filter-elements">
+							<li>
+								<input type="checkbox" name="swimmingpull">бассейн
+							</li>
+							<li>
+								<input type="checkbox" name="parking">парковка
+							</li>
+							<li>
+								<input type="checkbox" name="wifi">wifi
+							</li>
+						</ul>            
+				</fieldset>
+				<fieldset>
+					<legend>тип жилья:</legend>
+						<ul class="filter-elements">
+							<li>
+								<input type="checkbox" name="hotel">гостиница
+							</li>
+							<li>
+								<input type="checkbox" name="motel">мотель
+							</li>
+							<li>
+								<input type="checkbox" name="appartment">аппартаменты
+							</li>
+				</fieldset>
+				<p class="filter-item">
+					<label for="filter-name">стоимость в сутки(Р)</label>
+					<input id="filter-price-min" type="text" name="name" value="" placeholder="от 0">
+					<input id="filter-price-max" type="text" name="name" value="" placeholder="до 3000">
+				</p>
+				<button type="submit" class="button filter-button-transparent">
+					показать
 				</button>
-				<button type="submit" class="button filter-button-brown">
-					забронировать
-				</button>
-			</li>
-			<li>Desert Quail Inn
-				<img src="img/desert-quail-inn.jpg">
-				<p>мотель</p>
-				<p>от 3000р.</p>
-				<button type="submit" class="button filter-button-blue">
-					подробнее
-				</button>
-				<button type="submit" class="button filter-button-brown">
-					забронировать
-				</button>
-			</li>
-			<li>Villas at Poco Diablo
-				<img src="img/villas-at-poco-diablo.jpg">
-				<p>аппартаменты</p>
-				<p>от 2000р.</p>
-				<button type="submit" class="button filter-button-blue">
-					подробнее
-				</button>
-				<button type="submit" class="button filter-button-brown">
-					забронировать
-				</button>
-			</li>			
-		</ul>
+			</form>
+		</section>
+		<div class="founded-housing"> 
+			<h2 class="visually-hidden">
+				Найденное жильё
+			</h2>
+			<p>
+				найдено:
+			</p>
+			<p>
+				сортировка 
+			</p>
+			<ul class="site-navigation">
+				<li><a>по цене</a></li>
+				<li><a>по типу</a></li>
+				<li><a>по рейтингу</a></li>
+			</ul>
+			<h2 class="visually-hidden">список доступного жилья</h2>
+			<ul>список гостиниц
+				<li>Amara Resort & Spa
+					<img src="img/amara-resort-&-spa.jpg" alt="фото amara-resort-&-spa">
+					<p>гостиница</p>
+					<p>от 4000р.</p>
+					<button type="submit" class="button filter-button-blue">
+						подробнее
+					</button>
+					<button type="submit" class="button filter-button-brown">
+						забронировать
+					</button>
+				</li>
+				<li>Desert Quail Inn
+					<img src="img/desert-quail-inn.jpg" alt="фото desert-quail-inn">
+					<p>мотель</p>
+					<p>от 3000р.</p>
+					<button type="submit" class="button filter-button-blue">
+						подробнее
+					</button>
+					<button type="submit" class="button filter-button-brown">
+						забронировать
+					</button>
+				</li>
+				<li>Villas at Poco Diablo
+					<img src="img/villas-at-poco-diablo.jpg" alt="фото villas-at-poco-diablo">
+					<p>аппартаменты</p>
+					<p>от 2000р.</p>
+					<button type="submit" class="button filter-button-blue">
+						подробнее
+					</button>
+					<button type="submit" class="button filter-button-brown">
+						забронировать
+					</button>
+				</li>			
+			</ul>
+		</div>
 	</main>
 	<footer class="main-footer">
-		<b class="footer-name">#visitSedona</b>
+		<b class="footer-name">#visitsedona</b>
 		<div class="footer-social">
 			<ul>
 				<li>

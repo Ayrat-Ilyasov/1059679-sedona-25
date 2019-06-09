@@ -24,6 +24,7 @@
 	</header>
 	
 	<main class="advantages">
+		<h1>Информация о Седоне</h1>
 		<div>
 			<img src="img/welcome.svg" width=459 height=353>
 			<img src="img/background-photo.jpg">
@@ -34,6 +35,7 @@
 			<p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
 		</section>
 		<ul class="list-of-benefits">
+			<h2>Список преимуществ</h2>
 			<li>
 				<img src="img/Hotel-with-flag.jpg"><br>
 				<div class="benefits-blue">
@@ -93,7 +95,34 @@
 					</p>
 				<div>
 			</li>			
-		</ul>		
+		</ul>
+		<section> 
+			<p class="interesting">Заинтересовались?</p>
+			<p class="small-font">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			<img src="img/map.png">
+		</section>
+		<section class="modal modal-search">
+			<h2>Поиск гостиницы в Седоне</h2>
+				<form class="Search-form" action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label class="visually-hidden" for="checkin-date">Дата заезда:</label>
+					<input class="search-icon" id="checkin-date" type="date" name="date" placeholder="14 сентября 2019">
+				</p>
+				<p>
+					<label class="visually-hidden" for="checkout-date">Дата выезда:</label>
+					<input class="search-icon" id="checkout-date" type="date" name="date" placeholder="21 сентября 2019">
+				</p>
+				<p>
+					<label class="visually-hidden" for="adults">Взрослые:</label>
+					<input class="search-icon" id="adults" type="number" name="number" placeholder="2">
+				</p>
+				<p>
+					<label class="visually-hidden" for="children">Дети:</label>
+					<input class="search-icon" id="children" type="number" name="number" placeholder="0">
+				</p>
+				<button class="button" type="submit">Найти</button>
+			</form>
+		</section>
 	</main>
 	
 	<footer class="main-footer">
@@ -120,8 +149,8 @@
 				</li>
 			</ul>
 		</div>
-		<p class="footer-copyright">
-			<b>Website By</b>
+		<p>
+			<b class="footer-copyright">Website By</b>
 			<a class="button" href="https://htmlacademy.ru">
 				<img src="img/htmlacademy-logo.svg" alt="Html academy">
 			</a>

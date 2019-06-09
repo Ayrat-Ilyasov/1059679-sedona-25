@@ -92,6 +92,20 @@ a{
 	width: 142px;
 	height: 27px;
 }
+.filter-button-transparent{
+	font: inherit;
+	font-size: 14px;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #81b3d2;
+	border: none;
+	width: 133px;
+	height: 32px;
+}
 .filter-button-blue:hover,
 .filter-button-blue:focus {
 	background-color: #669ec0;
@@ -109,3 +123,32 @@ a{
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3)
 }	
+
+.filter-item input {
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+.footer-copyright{
+	font: inherit;
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: normal;
+}
+.interesting {
+	font: inherit;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+	color: #000000;
+}
+.small-font{
+	font: inherit;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	color: #333333;
+	font-weight: normal;
+}

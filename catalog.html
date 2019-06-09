@@ -22,7 +22,11 @@
 		</nav>
 	</header>
 	<main class="advantages">
-		<div class="filter">
+		<h1>Страница выбора жилья</h1>
+		<section class="filter">
+          <h2>Фильтры для выбора жилья</h2>
+          
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
 			<fieldset>
 				<legend>Инфракструктура:</legend>
 					<ul class="filter-elements">
@@ -50,13 +54,16 @@
 							<input type="checkbox" name="Appartment">Аппартаменты
 						</li>
 			</fieldset>
-			<p> 
-				Стоимость в сутки (Р)
-			</p>
-			<button type="submit" class="button filter-button">
+			<p class="filter-item">
+              <label for="filter-name">Стоимость в сутки(Р)</label>
+              <input id="filter-price-min" type="text" name="name" value="" placeholder="от 0">
+			  <input id="filter-price-max" type="text" name="name" value="" placeholder="до 3000">
+            </p>
+			<button type="submit" class="button filter-button-transparent">
 				Показать
 			</button>
-		</div>
+			
+            
 		<p>
 			Найдено:
 		</p>

@@ -70,7 +70,11 @@ a{
 	align-self:flex-start;
 ;}
 .greeting{
-	background: url(../img/background-photo.jpg)no-repeat
+	width: 1201px;
+	margin: 0 auto;
+	background: 
+		url(../img/polygon.svg)no-repeat,
+		url(../img/background-photo.jpg) no-repeat;
 }
 .filter{
 	background: url(../img/filter-background.jpg)no-repeat

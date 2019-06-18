@@ -53,8 +53,8 @@ a{
 	
 	padding:0;
 	margin: 0;
-	background: rgba(234, 255, 45, 0.2);
-	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	/* background: rgba(234, 255, 45, 0.2);
+	box-shadow: inset 0 0 0 2px rgb(234, 255, 45); */
 }
 .info{
 	;
@@ -72,22 +72,23 @@ a{
 	min-width: 239px;
 
 	padding: 0px;
-	background: rgba(234, 200, 45, 0.2);
-	box-shadow: inset 0 0 0 2px rgb(234, 200, 45);
+	/* background: rgba(234, 200, 45, 0.2);
+	box-shadow: inset 0 0 0 2px rgb(234, 200, 45); */
 	vertical-align: middle;
 }
 .site-navigation a {
 	display: block;
 	padding: 14px 20px;
-	background: rgba(234, 230, 45, 0.2);
-	box-shadow: inset 0 0 0 2px rgb(234, 230, 45);
+	/* background: rgba(234, 230, 45, 0.2);
+	box-shadow: inset 0 0 0 2px rgb(234, 230, 45); */
 	vertical-align: middle;
 }
 
 .main-header-logo{
+	position: absolute;
 	margin: 0px;
 	padding: 0px;
-	order: 2;
+	order: 1;
 }
 .greeting{
 	width: 1200px;
@@ -98,6 +99,9 @@ a{
 		url(../img/polygon.svg)no-repeat,
 		url(../img/background-photo.jpg) no-repeat;
 	background-position:bottom, 0px -56px;
+}
+.welcome-image{
+	margin-top: 76px;
 }
 .motivator{
 	width: 1200px;

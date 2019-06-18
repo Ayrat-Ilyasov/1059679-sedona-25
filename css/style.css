@@ -2,7 +2,9 @@ body {
 	min-width: 1220px;
 	margin: 0;
 	padding: 0;
-	font-family:  "PT Sans narrow", 'Times New Roman', Times, serif, sans-serif;
+	font-family: 'PT Sans', arial, sans-serif;
+	src:url(..fonts\google\PT_Sans-Web-Bold.ttf);
+	src: url(..\fonts\google\PT_Sans-Web-Regular.ttf);
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;

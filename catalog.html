@@ -24,72 +24,73 @@
 	<main class="advantages">
 		<h1 class="visually-hidden">Страница выбора жилья</h1>
 		<section class="filter">
-          	<h2 class="visually-hidden">Фильтры для выбора жилья</h2>
+          	<h2 class="visually-hidden">Настройки поиска гостиниц и апартаментов</h2>
          	<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
 				<fieldset>
 					<legend>Инфраструктура:</legend>
-						<ul class="filter-elements">
-							<li>
-								<input type="checkbox" id="swimmingpull" name="swimmingpull">
-								<label class="infrastruktura" for="swimmingpull">Бассейн</label>
-							</li>
-							<li>
-								<input type="checkbox" id="parking" name="parking">
-								<label class="infrastruktura" for="parking">Парковка</label>
-							</li>
-							<li>
-								<input type="checkbox" id="wifi" name="wifi">
-								<label class="infrastruktura" for="wifi">wifi</label>
-							</li>
-						</ul>            
+					<ul class="filter-elements">
+						<li>
+							<input type="checkbox" id="swimmingpull" name="swimmingpull">
+							<label class="filter-form-checkbox" for="swimmingpull">Бассейн</label>
+						</li>
+						<li>
+							<input type="checkbox" id="parking" name="parking">
+							<label class="filter-form-checkbox" for="parking">Парковка</label>
+						</li>
+						<li>
+							<input type="checkbox" id="wifi" name="wifi">
+							<label class="filter-form-checkbox" for="wifi">wifi</label>
+						</li>
+					</ul>            
 				</fieldset>
 				<fieldset>
 					<legend>Тип жилья:</legend>
-						<ul class="filter-elements">
-							<li>
-								<input type="checkbox" name="hotel">Гостиница
-							</li>
-							<li>
-								<input type="checkbox" name="motel">Мотель
-							</li>
-							<li>
-								<input type="checkbox" name="appartment">Аппартаменты
-							</li>
-						</ul>
+					<ul class="filter-elements">
+						<li>
+							<input type="checkbox" id="hotel" name="hotel">
+							<label class="filter-form-checkbox" for="hotel">Гостиница</label>
+						</li>
+						<li>
+							<input type="checkbox" id="motel" name="motel">
+							<label class="filter-form-checkbox" for="motel">Мотель</label>
+						</li>
+						<li>
+							<input type="checkbox" id="appartment" name="appartment">
+							<label class="filter-form-checkbox" for="appartment">Аппартаменты</label>
+						</li>
+					</ul>
 				</fieldset>
-				<p class="filter-item">
-					<label for="filter-price-min">Стоимость в сутки(Р):</label>
+				<fieldset>
+					<legend>Стоимость в сутки(Р):</legend>
 					<input id="filter-price-min" type="text" name="name" value="" placeholder="от 0">
-					<input id="filter-price-min-range" type="range" min="0" max="3000" step="1" value="50">
+					<label class="visually-hidden" for="filter-price-min">Цена от</label>
 					<input id="filter-price-max" type="text" name="name" value="" placeholder="до 3000">
-					<input id="filter-price-max-range" type="range" min="0" max="3000" step="1" value="50">
-				</p>
+					<label class="visually-hidden" for="filter-price-max">Цена до</label>
+				</fieldset>
 				<button type="submit" class="button filter-button-transparent">
 					Показать
 				</button>
 			</form>
 		</section>
 		<section class="founded-housing"> 
-			<h2 class="visually-hidden">
-				Найденное жильё
-			</h2>
-			<span>
+			<h2 class="founded-housing-headlines">
 				Найдено:
-			</span>
-			<span>
-				Сортировка: 
-			</span>
-			<ul class="sorting">
-				<li><a>По цене</a></li>
-				<li><a>По типу</a></li>
-				<li><a>По рейтингу</a></li>
-			</ul>
-			<button type="submit" class="descending-sorting">
-				по убыванию
-			</button>
-			<button type="submit" class="ascending-sorting">
-				по возрастанию
-			</button>
+				<span>
+					3
+				</span>
+			</h2>
+			<div class="sorting-conteiner">
+				<span>
+					Сортировка: 
+				</span>
+				<ul class="sorting">
+					<li><a>По цене</a></li>
+					<li><a>По типу</a></li>
+					<li><a>По рейтингу</a></li>
+					<li><a class="ascending-sorting">Отсортировать по возрастанию</a></li>
+					<li><a class="descending-sorting">Отсортировать по убыванию</a></li>					
+				</ul>
+			</div>
 			<h2 class="visually-hidden">Список доступного жилья</h2>
 			<ul>
 				<li>

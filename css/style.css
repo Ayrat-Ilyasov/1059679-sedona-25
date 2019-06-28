@@ -297,13 +297,7 @@ a{
   background-color: transparent;
   border: 2px solid #ffffff;
 }
-.footer-copyright{
-	font: inherit;
-	font-size: 14px;
-	line-height: 26px;
-	color: #000000;
-	font-weight: normal;
-}
+
 .interesting {
 	font: inherit;
 	font-size: 30px;
@@ -417,4 +411,21 @@ input[type="radio"].visually-hidden {
 .footer-copyright-conteiner{
 	width: 400px;
 	align-items: center;
+	display: flex;
+	padding: 0px;
+	margin: 0px auto;
+	justify-content: center;
+}
+.footer-copyright{
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: normal;
+	padding: 0px;
+	margin: 0px ;
+}
+.htmlacademy-logo{
+	padding: 0px;
+	margin: 0px ;
+	margin-left: 8px;
 }

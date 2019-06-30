@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -26,7 +27,7 @@
 		<section class="filter">
           	<h2 class="visually-hidden">Настройки поиска гостиниц и апартаментов</h2>
          	<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-				<fieldset>
+				<fieldset class="infrastructure-fieldset">
 					<legend>Инфраструктура:</legend>
 					<ul class="filter-elements">
 						<li>
@@ -43,7 +44,7 @@
 						</li>
 					</ul>            
 				</fieldset>
-				<fieldset>
+				<fieldset class="type-of-housing-fieldset">
 					<legend>Тип жилья:</legend>
 					<ul class="filter-elements">
 						<li>
@@ -60,16 +61,34 @@
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset>
-					<legend>Стоимость в сутки(Р):</legend>
-					<input id="filter-price-min" type="text" name="name" value="" placeholder="от 0">
-					<label class="visually-hidden" for="filter-price-min">Цена от</label>
-					<input id="filter-price-max" type="text" name="name" value="" placeholder="до 3000">
-					<label class="visually-hidden" for="filter-price-max">Цена до</label>
-				</fieldset>
-				<button type="submit" class="button filter-button-transparent">
-					Показать
-				</button>
+				<div class="filter-range">
+					<div class="filter-range-title">Стоимость в сутки (р):</div>
+					<div class="price-controls">
+						<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+						<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+					</div>
+					<div class="range-controls">
+						<div class="scale">
+						<div class="bar"></div>
+						</div>
+						<div class="range-toggle range-toggle-min"></div>
+						<div class="range-toggle range-toggle-max"></div>
+					</div>
+					<button class="btn-transparent" type="submit">Показать</button>
+				</div>
+
+					<!-- <fieldset class="price-fieldset">
+						<legend>Стоимость в сутки(Р):</legend>
+						<input id="filter-price-min" type="text" name="name" value="" placeholder="от 0">
+						<label class="visually-hidden" for="filter-price-min">Цена от</label>
+						<input id="filter-price-max" type="text" name="name" value="" placeholder="до 3000">
+						<label class="visually-hidden" for="filter-price-max">Цена до</label>
+					</fieldset>
+					<button type="submit" class="button filter-button-transparent">
+						Показать
+					</button> -->
+
+				
 			</form>
 		</section>
 		<section class="founded-housing"> 
@@ -87,8 +106,18 @@
 					<li><a>По цене</a></li>
 					<li><a>По типу</a></li>
 					<li><a>По рейтингу</a></li>
-					<li><a class="ascending-sorting">Отсортировать по возрастанию</a></li>
-					<li><a class="descending-sorting">Отсортировать по убыванию</a></li>					
+					<li><a class="ascending-sorting">
+							<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+								<path fill="#231F20" d="M5.5 10L0 0h11"/>
+							</svg>
+							Отсортировать по возрастанию
+						</a></li>
+					<li><a class="descending-sorting">
+							<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+								<path fill="#231F20" d="M5.5 10L0 0h11"/>
+							</svg>
+							Отсортировать по убыванию
+						</a></li>					
 				</ul>
 			</div>
 			<h2 class="visually-hidden">Список доступного жилья</h2>

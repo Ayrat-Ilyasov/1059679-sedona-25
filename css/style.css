@@ -256,6 +256,7 @@ a{
 	border: none;
 	width: 110px;
 	height: 27px;
+	margin-right:auto; 
 }
 .filter-button-brown {
 	font: inherit;
@@ -635,22 +636,19 @@ input[type="radio"].visually-hidden {
 	margin: 0px auto;
 	padding: 0px;
 }
+.ascending-sorting{
+	font-size: 0px 
+}
+.descending-sorting{
+	font-size: 0px
+}
 .founded-housing-headlines{
+	width: 200px;
 	margin:0px;
+	font-size: 21px;
+	line-height: 26px;
 }
-.founded-housing-list{
-	margin:0px;
-}
-   .ascending-sorting{
-	  font-size: 0px 
-  }
-  .descending-sorting{
-	  font-size: 0px
-  }
-  .founded-housing-headlines{
-	  width: 200px;
-  }
-  .sorting{
+.sorting{
 	list-style: none;
 	display: flex;
 	flex-direction: row;
@@ -659,13 +657,51 @@ input[type="radio"].visually-hidden {
 }
 .sorting li{
 	padding-left: 20px;
+	color: #81b3d2;
 }
 .sorting-conteiner{
 	display: flex;
 	flex-direction: row;
-	font-size: 16px;
-	padding-top: 20px;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 32px;
 }
 .founded-housing-list{
 	list-style: none;
+	margin:0px;
+	padding: 0px;
+	font-size: 14px;
+}
+.founded-housing-list li{
+	margin: 0px;
+	padding: 0px;
+	border-top: 1px solid #f2f2f2;
+	display: flex;
+	padding-left:72px;
+	padding-right: 72px;
+	padding-top:30px;
+	padding-bottom: 30px;
+}
+.founded-housing-list img{
+	order:-1;
+}
+.founded-housing-list h3{
+	font-size: 21px;
+	margin: 0px;
+}
+.founded-housing-conteiner{
+	margin: 0px;
+	margin-left: 30px;
+	padding: 0px;
+	width: 260px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.founded-housing-rating{
+	margin: 0px;
+	margin-left: auto;
+	padding: 0px;
+	width:100px;
 }

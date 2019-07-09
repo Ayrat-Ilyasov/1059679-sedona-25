@@ -29,7 +29,7 @@ body {
 	text-align: center;
 	background-color: #f2f2f2;
 	align-items: center;
-	
+	letter-spacing: 0.25px;
 	/* box-shadow: 0 0 10px rgba(0,0,0,0.3); */
 }
 a{
@@ -89,7 +89,7 @@ a{
 	
 }
 .site-navigation li {
-	min-width: 239px;
+	width: 239px;
 
 	padding: 0px;
 	/* background: rgba(234, 200, 45, 0.2);
@@ -98,7 +98,9 @@ a{
 }
 .site-navigation a {
 	display: block;
-	padding: 14px 20px;
+	padding: 20px;
+	padding-top: 14px;
+	padding-bottom: 16px;
 	/* background: rgba(234, 230, 45, 0.2);
 	box-shadow: inset 0 0 0 2px rgb(234, 230, 45); */
 	vertical-align: middle;
@@ -129,7 +131,7 @@ a{
 	box-shadow: 0 10px 10px rgba(0,0,0,0.3);
 	margin:0px auto;
 	padding: 0px;
-	padding-bottom: 50px;
+	padding-bottom: 0px;
 	background-color: #ffffff
 }
 .tagline{
@@ -140,50 +142,19 @@ a{
 	margin:0px auto;
 	padding: 0px;
 	padding-top: 61px;
-	padding-bottom: 38px;
+	padding-bottom: 28px;
 }
-.reasons-black{
+.reasons-black-motivator{
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: normal;
-	width: 489px;
+	color: #333333;
+	width: 520px;
 	margin:0px auto;
 	padding: 0px;
-	/* padding-top: 38px; */
-	/* padding-bottom: 56px; */
+	letter-spacing: 0.08px;
 }
-.reasons-blue{
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: normal;;
-	margin:0px auto;
-	/* margin-top: 46; */
-	padding-left: 60px;
-	padding-right: 60px; 
-	padding-top: 38px;
-	/* padding-bottom: 60px; */
-}
-.reasons-white{
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: normal;;
-	margin:0px auto;
-	padding: 30px;
-	/* padding-top: 38px; */
-	padding-bottom: 82px;
-	color: #333333;
-}
-.reasons-gray{
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: normal;;
-	margin:0px auto;
-	margin-top:25px;
-	padding-left: 60px;
-	padding-right: 60px;
-	padding-bottom: 56px;
-	color: #333333
-}
+
 .filter{
 	background: url(../img/filter-background.jpg)no-repeat;
 	background-position: 0px -294px;
@@ -192,6 +163,14 @@ a{
 	min-height: 217px;
 	margin: 0px auto;
 	padding: 0px; 
+}
+.conteiner{
+	width: 1200px;
+	min-height: 216px;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+	margin:0px auto;
+	padding: 0px;
+	display: flex;
 }
 .list-of-benefits {
 	list-style: none;
@@ -205,39 +184,105 @@ a{
 .list-of-benefits-city{
 	list-style: none;
 	width: 1200px;
-	min-height: 216px;
+	min-height: 330px;
 	box-shadow: 0 10px 10px rgba(0,0,0,0.3);
 	margin:0px auto;
 	padding: 0px;
-	padding-top: 60px;
+	padding-top: auto;
 	display: flex;
+	align-items: flex-end;
 	background-color: #ffffff;
 }
-.conteiner{
-	width: 1200px;
-	min-height: 216px;
-	box-shadow: 0 10px 10px rgba(0,0,0,0.3);
-	margin:0px auto;
-	padding: 0px;
-	display: flex;
+.list-of-benefits-city li{
+	width: 400px;
+	height: auto;
 }
 .benefits-headlines-black{
 	font-size: 21px;
 	color: #000000;
 	margin: 0px;
-	padding-top: 30px;
+	padding-top: 27px;
+	padding-bottom: 23px;
 }
 .benefits-headlines-blue{
+	width: 330px;
 	font-size: 21px;
 	color: #ffffff;
 	margin-top: 46px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.benefits-headlines-city{
+	width: 140px;
+	font-size: 21px;
+	color: #ffffff;
+	margin-top: 46px;
+	margin-left: auto;
+	margin-right: auto;
+	
 }
 .benefits-headlines-gray{
+	width: 150px;
 	font-size: 21px;
 	color: #000000;
 	margin: 0px;
-	padding-top: 50px;
-	margin-bottom: 25px;
+	padding-top: 48px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.reasons-blue{
+	width: 310px;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	letter-spacing: 0.09px;
+	margin:0px auto;
+	padding-top: 19px;
+}
+.reasons-blue-city{
+	width: 280px;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	letter-spacing: 0.09px;
+	margin:0px auto;
+	padding-top: 19px;
+}
+.reasons-white{
+	width: 290px;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: normal;
+	letter-spacing: 0.09px;
+	margin:0px auto;
+	padding-left: 30px;
+	padding-right:30px;
+	padding-bottom: 82px;
+	color: #333333;
+}
+.reasons-gray{
+	width: 265px;
+	font-size: 14px;
+	line-height: 23px;
+	font-weight: normal;
+	letter-spacing: 0.09px;
+	margin:0px auto;
+	margin-top:18px;
+	padding-bottom: 56px;
+	color: #333333
+}
+.reasons-black{
+	width: 450px;
+	font-size: 14px;
+	line-height: 23px;
+	font-weight: normal;
+	letter-spacing: 0.09px;
+	margin:0px auto;
+	margin-bottom: 49px;
+	/* padding-bottom: 56px; */
+	color: #333333
 }
 .benefits-blue {
 	width: 400px;
@@ -325,7 +370,6 @@ a{
 
 .filter-item input {
   font: inherit;
-
   background-color: transparent;
   border: 2px solid #ffffff;
 }
@@ -338,6 +382,8 @@ a{
 	color: #000000;
 	margin: 0px;
 	padding: 0px;
+	margin-bottom: 25px;
+
 }
 .small-font{
 	font: inherit;
@@ -367,23 +413,27 @@ input[type="radio"].visually-hidden {
 
 .hotel-search{
 	width: 1200px;
-	min-height: 216px;
+	min-height: 241px;
 	box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+	/* display: flex;
+	flex-direction: column; */
 	margin:0px auto;
 	padding: 0px;
-	padding-top: 54px;
+	padding-top: 50px;
 	background-color: #ffffff
 }
-.interesting{
+.modal-search{
+	position: relative;
+	bottom: 0px;
+	/* top: 49px; */
 	margin: 0px;
-	margin-bottom: 30px;
 	padding: 0px;
 }
 .search-button{
 	width: 568px;
 	height: 86px;
 	margin:0px auto;
-	margin-top: 47px;
+	/* margin-top: 47px; */
 	margin-bottom: 0px;
 	padding: 0px;
 	background-color: #766357;
@@ -404,6 +454,7 @@ input[type="radio"].visually-hidden {
 	color: rgba(255, 255, 255, 0.3);
 }
 .search-form{
+	
 	width: 568px;
 	height: 395px;
 	display: flex;
@@ -417,6 +468,7 @@ input[type="radio"].visually-hidden {
 	justify-content: center;
 	font-family: inherit;
 	font-size: 14px;
+	display: none;
 }
 .checkin{
 	display: flex;
@@ -438,6 +490,8 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 0;
 }
 .checkin-date{
+	width: 118px;
+	text-align: left;
 	margin-left: 0px;
 	margin-right: auto;
 	margin-top: auto;
@@ -445,6 +499,8 @@ input[type="radio"].visually-hidden {
 }
 
 .checkout-date{
+	width: 118px;
+	text-align: left;
 	margin-left:0px;
 	margin-right: auto;
 	margin-top: auto;
@@ -469,9 +525,19 @@ input[type="radio"].visually-hidden {
 	margin-bottom: auto;
 }
 .adults-and-children{
+	width: 112px;
+	text-align: left;
 	margin-top: auto;
 	margin-bottom: auto;
-	margin-right: 41px;
+	margin-right: 0px;
+}
+.children-label{
+	width: 60px;
+	text-align: right;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 26px;
+	padding-right: 0px;	
 }
 .button-plus{
 	width: 38px;
@@ -534,13 +600,15 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: bold;
-	text-align: center;
+	text-align: left;
 	width: 308px;
 	height:38px;
 	margin: 0px;
 	/* margin-top: 30px; */
 	margin-left: auto;
 	padding: 0px;
+	/* margin-left: 12px; */
+	padding-left: 13px;
 	border: #f2f2f2;
 	background-color: #f2f2f2;
 }
@@ -570,7 +638,7 @@ input[type="radio"].visually-hidden {
 	/* padding-left: auto;
 	padding-right: auto; */
 	border: none;
-	background-color: #f245f2;
+	background-color: #f2f2f2;
 }
 
 .calendar{
@@ -627,7 +695,7 @@ input[type="radio"].visually-hidden {
 .main-footer{
 	list-style: none;
 	width: 1200px;
-	min-height: 120px;
+	height: 120px;
 	box-shadow: 0 10px 10px rgba(0,0,0,0.3);
 	margin:0px auto;
 	padding: 0px;
@@ -649,14 +717,16 @@ input[type="radio"].visually-hidden {
 	background-color: #ffffff;
 	border-top: 1px solid #f2f2f2;
 	align-items: center;
-	justify-content: space-between;	
+	justify-content: center;	
 }
 .footer-name{
 	width: 400px;
+	margin-left: 1px;
 	align-items: center;
 }
 .footer-social {
-	width: 400px;
+	width: 396px;
+	margin-left: 5px;
 	list-style: none;
 	display: flex;
 	flex-direction: row;
@@ -668,6 +738,10 @@ input[type="radio"].visually-hidden {
 	height: 48px;
 	margin: 3px;
 	padding: 0px;
+}
+/* !!! У меня появляется этот Padding и смещяет ссылки на сосети. Поэтому пришлось ввести такой фильтр. */
+ul{
+	padding-inline-start: 0px;
 }
 .social-button{
 	display: flex;
@@ -700,7 +774,9 @@ input[type="radio"].visually-hidden {
 	align-items: center;
 	display: flex;
 	padding: 0px;
-	margin: 0px auto;
+	margin: 0px;
+	margin-left: 10px;
+	letter-spacing: 0.1px;
 	justify-content: center;
 }
 .footer-copyright{

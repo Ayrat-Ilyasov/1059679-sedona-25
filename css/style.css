@@ -225,7 +225,7 @@ a{
 	        box-shadow: 0 10px 10px rgba(0,0,0,0.3);
 	margin:0px auto;
 	padding: 0px;
-	padding-top: auto;
+	/* padding-top: auto; */
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -845,7 +845,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* !!! У меня появляется этот Padding и смещяет ссылки на сосети. Поэтому пришлось ввести такой фильтр. */
 ul{
 	-webkit-padding-start: 0px;
-	        padding-inline-start: 0px;
+	/* padding-inline-start: 0px; */
 }
 .social-button{
 	display: -webkit-box;
@@ -1388,4 +1388,4 @@ input[type="checkbox"] {
 	margin-top: auto;
 	text-align: center;
 }
-}
+

@@ -141,14 +141,21 @@ a{
 	/* display: block; */
 	background: 
 		/* url(../img/polygon.png) 0px 452px no-repeat, */
-		url(../img/polygon.svg) 0px 100% no-repeat,
+		/* url(../img/polygon.svg) 0px 100% no-repeat, */
 		url(../img/background-photo.jpg) 0px -56px no-repeat ;
 
 }
-/* .greeting::after{
+.greeting::after{
+	content: "";
+	position: absolute;
+ 	height: 59px;
+	width: 1200px;
 	background:  
-		url(../img/polygon.svg) 0px 100% no-repeat
-} */
+	url(../img/polygon.svg) no-repeat;
+	top: 538px;
+	left: 50%;
+  	transform:translate(-50%, -50%);
+}
 .welcome-image{
 	margin-top: 76px;
 }
@@ -220,11 +227,12 @@ a{
 .list-of-benefits-city{
 	list-style: none;
 	width: 1200px;
-	min-height: 330px;
+	/* min-height: 330px; */
 	-webkit-box-shadow: 0 10px 10px rgba(0,0,0,0.3);
 	        box-shadow: 0 10px 10px rgba(0,0,0,0.3);
 	margin:0px auto;
 	padding: 0px;
+	padding-top: 54px;
 	/* padding-top: auto; */
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -300,6 +308,7 @@ a{
 	margin:0px auto;
 	padding-left: 30px;
 	padding-right:30px;
+	/* padding-top: 50px; */
 	padding-bottom: 82px;
 	color: #333333;
 }
@@ -935,6 +944,7 @@ ul{
 }
 .infrastructure-fieldset legend{
 	padding: 0px;
+	color: #ffffff;
 }
 .type-of-housing-fieldset{
 	border: none;
@@ -947,6 +957,7 @@ ul{
 }
 .type-of-housing-fieldset legend{
 	padding: 0px;
+	color: #ffffff;
 }
 .price-fieldset{
 	border: none;
@@ -1050,6 +1061,9 @@ input[type="checkbox"] {
 	margin-right: 0px;
 	text-align: right;
   }
+  .min-price input{
+	
+  }
   .price-controls .max-price {
 	width: 100px;
 	padding-left: 0px;
@@ -1060,6 +1074,7 @@ input[type="checkbox"] {
  
   .price-controls input {
 	width: 50px;
+	height: 30px;
 	margin: 0;
   
 	color: inherit;
@@ -1238,16 +1253,20 @@ input[type="checkbox"] {
 	padding: 0px;
 	margin: 0px;
 	letter-spacing: 0.09px;
+	
 }
 .sorting-span{
 	margin-left: 29px;
 	margin-top:10px;
 	letter-spacing: 0.09px;
+	font-size: 12px;
 }
 .sorting li{
 	color: rgba(0, 0, 0, 0.3);
 	font-weight: normal;
 	margin-top:10px;
+	font-size: 12px;
+	line-height: 18px;
 }
 .sorting li:hover,
 .sorting li:focus{
@@ -1358,6 +1377,7 @@ input[type="checkbox"] {
 	margin-left: auto;
 	padding: 0px;
 	width:111px;
+	color: #666666;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1372,6 +1392,8 @@ input[type="checkbox"] {
 	        justify-content: flex-end;
 }
 .founded-housing-rating img{
+	width: 18px;
+	height: 17px;
 	margin-left: 6px;
 	margin-bottom: auto;
 }

@@ -124,6 +124,10 @@ a{
 	position: absolute;
 	margin: 0px;
 	padding: 0px;
+	top: 0px;
+	left: 50%;
+  	-webkit-transform:translate(-50%);
+  	        transform:translate(-50%);
 	-webkit-box-ordinal-group: 2;
 	    -ms-flex-order: 1;
 	        order: 1;
@@ -134,15 +138,22 @@ a{
 	        box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
 	height: 509px;
 	margin: 0px auto;
+	/* display: block; */
 	background: 
-		url(../img/polygon.svg)no-repeat,
-		url(../img/background-photo.jpg) no-repeat;
-	background-position:bottom, 0px -56px;
+		/* url(../img/polygon.png) 0px 452px no-repeat, */
+		url(../img/polygon.svg) 0px 100% no-repeat,
+		url(../img/background-photo.jpg) 0px -56px no-repeat ;
+
 }
+/* .greeting::after{
+	background:  
+		url(../img/polygon.svg) 0px 100% no-repeat
+} */
 .welcome-image{
 	margin-top: 76px;
 }
 .motivator{
+	
 	width: 1200px;
 	min-height: 216px;
 	-webkit-box-shadow: 0 10px 10px rgba(0,0,0,0.3);
